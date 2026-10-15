@@ -4,5 +4,7 @@ module CalculadoraApp {
   interface Calculadora {
     double somar(in double numero1, in double numero2);
     double subtrair(in double numero1, in double numero2);
+    double multiplicar(in double numero1, in double numero2);
+    double dividir(in double numero1, in double numero2);
   };
 };
