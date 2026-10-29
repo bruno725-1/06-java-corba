@@ -1,0 +1,23 @@
+module EstoqueApp {
+    struct Produto {
+        string nome;
+        long quantidade;
+        double preco;
+    };
+
+    typedef sequence<Produto> ListaProdutos;
+
+    interface Estoque {
+        ListaProdutos listarProdutos();
+
+        boolean alterarQuantidade(
+            in string nome,
+            in long novaQuantidade
+        );
+
+        boolean alterarPreco(
+            in string nome,
+            in double novoPreco
+        );
+    };
+};
